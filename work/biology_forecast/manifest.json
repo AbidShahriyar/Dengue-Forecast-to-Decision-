@@ -1,0 +1,80 @@
+{
+  "objective": "Rolling-origin comparison of baseline and biology-informed weekly dengue forecasts",
+  "input_sha256": "5925d37eaa9509fb3c425b7ecfa68fa51cfc445d045cc5f9d4b9addd13c86809",
+  "daily_weather_sha256": "d36fae307da88953caab97dcd536057b842930a68fcc0371d544b5af928feac1",
+  "pipeline_sha256": "47acb08fb81a2b952a126ef164703ccc1dd368fd9c2218b7bb98eba3805c1eef",
+  "config_sha256": "e106eb37f70b78a0c0b46b06da09b80ae19003f0e29cbab7e361ec1f58a1a1fb",
+  "completed_horizons": [
+    1,
+    2,
+    4
+  ],
+  "completed_stages": [
+    "biology_features",
+    "rolling_backtest",
+    "rolling_model_selection",
+    "conformal_intervals",
+    "seasonal_metrics",
+    "paired_bootstrap",
+    "metrics",
+    "deliverables"
+  ],
+  "status": "complete",
+  "updated_at": "2026-10-14T19:54:57.934562+06:00",
+  "selected_models": [
+    {
+      "horizon": 1,
+      "selected_model": "ensemble_log_hgb",
+      "n_common": 124,
+      "mae": 226.49332591608362,
+      "rmse": 376.217836810688,
+      "wape": 0.0983419147706106,
+      "mean_bias": 22.77798544681681,
+      "peak_week_mae": 553.2970744373653,
+      "coverage_80_asymmetric": 0.7403846153846154,
+      "coverage_80_conformal": 0.8557692307692307,
+      "coverage_80_conformal_2026": 0.9,
+      "width_80_conformal": 830.4864397297911,
+      "interval_score_80_conformal": 1141.49257358233,
+      "mae_rank": 1,
+      "mae_skill_vs_persistence": 0.34982006635812646,
+      "wape_skill_vs_persistence": 0.34982006635812646
+    },
+    {
+      "horizon": 2,
+      "selected_model": "ensemble_log_hgb",
+      "n_common": 123,
+      "mae": 389.24695040977144,
+      "rmse": 654.1828952639911,
+      "wape": 0.16873321527141136,
+      "mean_bias": 45.487041527896196,
+      "peak_week_mae": 944.0285030080198,
+      "coverage_80_asymmetric": 0.7254901960784313,
+      "coverage_80_conformal": 0.8431372549019608,
+      "coverage_80_conformal_2026": 0.875,
+      "width_80_conformal": 1390.181908044247,
+      "interval_score_80_conformal": 1939.7031534774928,
+      "mae_rank": 1,
+      "mae_skill_vs_persistence": 0.40424350579361545,
+      "wape_skill_vs_persistence": 0.40424350579361545
+    },
+    {
+      "horizon": 4,
+      "selected_model": "ensemble_log_hgb",
+      "n_common": 121,
+      "mae": 764.8922861752632,
+      "rmse": 1386.2512295699041,
+      "wape": 0.33226696617521223,
+      "mean_bias": 304.7956757277021,
+      "peak_week_mae": 1494.6791089610656,
+      "coverage_80_asymmetric": 0.6938775510204082,
+      "coverage_80_conformal": 0.8673469387755102,
+      "coverage_80_conformal_2026": 0.875,
+      "width_80_conformal": 2423.5027322045416,
+      "interval_score_80_conformal": 3544.5378302187023,
+      "mae_rank": 1,
+      "mae_skill_vs_persistence": 0.3709211569421039,
+      "wape_skill_vs_persistence": 0.3709211569421039
+    }
+  ]
+}

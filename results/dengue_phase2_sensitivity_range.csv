@@ -1,0 +1,4 @@
+case,forecast_level,reported_admissions_forecast,capture_uplift_fraction,planning_admissions,clinical_scenario,length_of_stay_days,bed_days,average_occupied_beds,iv_liters_per_admission,iv_liters,iv_500ml_equivalent_bags
+observed-workload low,lower,10649.2,0.0,10649.2,low,4.0,42596.8,6085.257142857144,2.0,21298.4,42596.8
+selected planning,upper,13454.9,0.25,16818.625,central,5.0,84093.125,12013.30357142857,4.5,75683.8125,151367.625
+stress high,upper,13454.9,0.5,20182.35,high,6.0,121094.09999999999,17299.15714285714,6.0,121094.09999999999,242188.19999999998

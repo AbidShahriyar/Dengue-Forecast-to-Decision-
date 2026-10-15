@@ -1,0 +1,41 @@
+{
+  "status": "complete",
+  "generated_at": "2026-10-14T12:59:01.247456+06:00",
+  "purpose": "analysis-only manuscript revision feasibility audit",
+  "manuscript_edited": false,
+  "inputs": {
+    "outputs/dengue_biology_backtest_predictions.csv": "14e9fa4726bba8f0e3756c0c71beece9fa56d453ac0c4a7990fa19e9fabb0d0f",
+    "outputs/dengue_biology_benchmark_metrics.csv": "b5a08e7a8f72149138dd46b856f747abb9934092f249fafdad364f69f3c97d2d",
+    "outputs/dengue_biology_benchmark_metrics_by_season.csv": "9f2521a2262e70a4d52305e7500518bf246fe5d19755c0c0f4d063286521e31b",
+    "outputs/dengue_biology_paired_bootstrap.csv": "e0085292115e526ece650aa27b299afc5f4fc098a3964b45d8a5f19474a0ece2",
+    "outputs/dengue_phase2_joint_backtest_summary.csv": "22028a277f28b9bddb3462c8af9b2b89442e6a2ce79722ae31f683ab898669a1",
+    "outputs/dengue_phase2_joint_backtest_detail.csv": "e79c9c678461ae4cf98f9afd655ee2667030387211e736fbc66e3666e81d25ca",
+    "outputs/dengue_phase2_joint_bootstrap_comparisons.csv": "be8eb551db27cd99bfb7bf8d3428b718dd3194959353fdb1653cafa8c21f296c",
+    "outputs/dengue_phase2_joint_budget_matched_comparisons.csv": "b8544a0037b73dc50ac9f1dbdd5eb978604c679f18823d553e2f5d74e03d8487",
+    "outputs/dengue_phase2_joint_reserve_frontier.csv": "5d5a5e997d95b6fa0c4e84b048d8aee2d11dc07d2b1ae0017f23c079ebe97427",
+    "outputs/dengue_phase3_decision_minimax_summary.csv": "a7619485f66e2b9000862245f5e50c0ca5bb65450f33e1749df929b195b26c8e",
+    "work/weekly_covariates/dengue_weekly_national.csv": "440192ae22d60b63468c2394be7c8d53923f5588b1752b0ed0cbe10a73993a17"
+  },
+  "outputs": {
+    "forecast_by_intensity": {
+      "path": "outputs/dengue_manuscript_revision_forecast_by_intensity.csv",
+      "sha256": "5a8e2e9c787e25670fc0e510c6f76b167ddc16a398b29d35a4ef00088fc139d4"
+    },
+    "scenario_grid": {
+      "path": "outputs/dengue_manuscript_revision_scenario_grid.csv",
+      "sha256": "78f132a064b08d56f291919f4644566fafde4242bc00442c3d7b9fe92493f46c"
+    },
+    "censoring_diagnostic": {
+      "path": "outputs/dengue_manuscript_revision_censoring_diagnostic.csv",
+      "sha256": "89fb362eb723e9f57091b88d163146cd5843c05f8d8f1f374ad3448a0bd2bd30"
+    },
+    "decisions": {
+      "path": "outputs/dengue_manuscript_revision_decisions.csv",
+      "sha256": "525ec93f4b02019f0d66ec09951ec17a4fc1f99b9e2a2ca6fe7d658f70c140a7"
+    },
+    "report": {
+      "path": "outputs/dengue_manuscript_revision_feasibility_report.md",
+      "sha256": "2d81b74e637536246693908b1f7e118bfdfb2e5a70b04cd4c2cf832e93e00dbc"
+    }
+  }
+}

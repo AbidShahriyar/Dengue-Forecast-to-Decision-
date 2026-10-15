@@ -1,0 +1,2 @@
+selected_forecast_level,reported_admissions_forecast,capture_uplift_fraction,planning_admissions,clinical_scenario,length_of_stay_days,bed_days,average_occupied_beds,iv_liters_per_admission,iv_liters,iv_500ml_equivalent_bags,latest_share_week,robust_envelope_share_sum,robust_envelope_premium_fraction,status
+upper,13454.9,0.25,16818.625,central,5.0,84093.125,12013.30357142857,4.5,75683.8125,151367.625,W40,1.0589327352716387,0.05893273527163867,"Illustrative stress-planning case, not a minimum clinical stock order."

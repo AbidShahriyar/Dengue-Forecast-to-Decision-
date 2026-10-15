@@ -1,0 +1,9 @@
+division,facility_count,facilities_with_approved_beds,facilities_with_bor,approved_public_beds,bed_weighted_annual_bor_pct,facilities_bor_at_or_above_100_pct,source_year,interpretation
+Barisal,42.0,42.0,42.0,3893.0,137.80666837914205,25.0,2025,Historical public-facility context only; approved beds are not staffed/usable beds and annual BOR is not current free-bed inventory.
+Chattogram,106.0,106.0,106.0,8898.0,128.5890402337604,62.0,2025,Historical public-facility context only; approved beds are not staffed/usable beds and annual BOR is not current free-bed inventory.
+Dhaka,109.0,109.0,109.0,20529.0,113.28833990939644,66.0,2025,Historical public-facility context only; approved beds are not staffed/usable beds and annual BOR is not current free-bed inventory.
+Khulna,62.0,62.0,62.0,5681.0,162.8281570146101,51.0,2025,Historical public-facility context only; approved beds are not staffed/usable beds and annual BOR is not current free-bed inventory.
+Mymensingh,35.0,35.0,35.0,3031.0,217.12384031672715,24.0,2025,Historical public-facility context only; approved beds are not staffed/usable beds and annual BOR is not current free-bed inventory.
+Rajshahi,69.0,69.0,69.0,6349.0,172.66703890376436,55.0,2025,Historical public-facility context only; approved beds are not staffed/usable beds and annual BOR is not current free-bed inventory.
+Rangpur,58.0,58.0,58.0,4655.0,128.92817615467237,34.0,2025,Historical public-facility context only; approved beds are not staffed/usable beds and annual BOR is not current free-bed inventory.
+Sylhet,41.0,40.0,41.0,3498.0,154.8962235563179,18.0,2025,Historical public-facility context only; approved beds are not staffed/usable beds and annual BOR is not current free-bed inventory.

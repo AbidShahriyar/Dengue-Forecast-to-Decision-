@@ -1,0 +1,64 @@
+{
+  "status": "complete",
+  "generated_on": "2026-10-14",
+  "selected_forecast_model": "ensemble_log_hgb",
+  "objective": "Jointly evaluate one-week national forecast and divisional allocation policies on the confirmed DGHS Sunday-Saturday calendar.",
+  "inputs": {
+    "work/weekly_covariates/dengue_weekly_division_published.csv": "8cf4d800eb73dcfeffeceae32cce8d9b15d1993fe23a09f2280a4cbe80f072da",
+    "work/weekly_covariates/dengue_weekly_national.csv": "440192ae22d60b63468c2394be7c8d53923f5588b1752b0ed0cbe10a73993a17",
+    "outputs/dengue_biology_backtest_predictions.csv": "e691dde2a82a5e428ac99ca79af7bc28b444e68efd57eea7bfa38b9a918530a0",
+    "outputs/dengue_biology_selected_models.csv": "3e751b636ff194498f3f367ef04a043be5516665e8cb5d997b7bec90b913dcac",
+    "outputs/dengue_phase2_week_exclusion_audit.csv": "9e9bf7a6f4190cab56b64062964e7170cb590d4108c3723fdab0e906b9faea77"
+  },
+  "parameters": {
+    "forecast_horizon_weeks": 1,
+    "require_nonmissing_conformal_interval": true,
+    "week_definition": "Sunday-Saturday; week 1 contains 1 January",
+    "reserve_uplifts": [
+      0.0,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95,
+      1.0
+    ],
+    "bootstrap_replicates": 2000,
+    "bootstrap_block_length_weeks": 4,
+    "bootstrap_seed": 20261013
+  },
+  "outputs": [
+    "outputs/dengue_phase2_joint_backtest_detail.csv",
+    "outputs/dengue_phase2_joint_backtest_division_detail.csv",
+    "outputs/dengue_phase2_joint_backtest_summary.csv",
+    "outputs/dengue_phase2_joint_bootstrap_comparisons.csv",
+    "outputs/dengue_phase2_joint_alignment_decisions.csv",
+    "outputs/dengue_phase2_joint_reserve_frontier.csv",
+    "outputs/dengue_phase2_joint_reserve_frontier_detail.csv",
+    "outputs/dengue_phase2_joint_budget_matched_comparisons.csv",
+    "outputs/dengue_phase2_forecast_choice_sensitivity_detail.csv",
+    "outputs/dengue_phase2_forecast_choice_sensitivity.csv",
+    "outputs/dengue_phase2_joint_backtest_report.md",
+    "work/phase2_capacity/JOINT_BACKTEST_CHECKPOINT.md"
+  ],
+  "limitations": [
+    "No official machine-readable DGHS week-calendar table was available; the confirmed study definition is encoded and tested.",
+    "Division and daily national dashboard aggregates can disagree.",
+    "Reported admissions omit unknown unmet and non-hospital demand.",
+    "No facility-week stock, usable-bed, staff, transfer, referral, or lead-time constraints are modeled."
+  ]
+}

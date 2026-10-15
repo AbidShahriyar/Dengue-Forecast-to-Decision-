@@ -1,0 +1,86 @@
+{
+  "run_date": "2026-10-14",
+  "method": "capacity-censored partial-identification allocation stress test",
+  "deterministic": true,
+  "inputs": {
+    "outputs/dengue_phase2_joint_backtest_division_detail.csv": "5cdbfab2047c3ace7b9567542a932aafc8eae37c52549f56d70079b6fee1a0f9",
+    "outputs/dengue_capacity_division_context_2025.csv": "1e2dec22cb3d5360201b93a94c1623d2d84a73a8c89c4052d6dc765b4bbe6718",
+    "tib_source_url": "https://ti-bangladesh.org/images/2023/report/dengue-crisis/Executive-Study-EN-Dengue-Crisis-Prevention-and-Control-TIB.pdf",
+    "who_source_url": "https://cdn.who.int/media/docs/default-source/searo/bangladesh/dengue-sitrep/dengue-sitrep-issue-1.pdf",
+    "outputs/dengue_who_2023_sentinel_hospital_weekly.csv": "f70f52528d83f1688ac057734856113950721fa76fea9c86ce1552271cb932fa",
+    "outputs/dengue_who_2023_sentinel_hospital_audit.csv": "15a0d039a84989d653fc30fd67e1d4d71deec3e78e728df2808e57c219077dbe"
+  },
+  "parameters": {
+    "latent_uplift_max": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "budget_uplift_over_point_forecast": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "spatial_truth_profiles": [
+      "uniform",
+      "capacity_linked",
+      "inverse_capacity",
+      "rotation_1_to_7"
+    ],
+    "allocation_policies": [
+      "pooled_reported",
+      "max_share_normalized",
+      "capacity_prior_half_weighted",
+      "capacity_prior_full_weighted"
+    ]
+  },
+  "outputs": {
+    "capacity_snapshot": {
+      "path": "outputs/dengue_phase3_capacity_stress_snapshot.csv",
+      "sha256": "d834a38c2806718cdea5e209c469c72f9051e2b9fbc48f4fc7edff938c22c779"
+    },
+    "week_detail": {
+      "path": "outputs/dengue_phase3_censoring_stress_week_detail.csv",
+      "sha256": "82bb79f5379e38eb10b92a22219b6027cb65ff1e60987543bb276cbe74149fc8"
+    },
+    "division_detail": {
+      "path": "outputs/dengue_phase3_censoring_stress_division_detail.csv",
+      "sha256": "d16b7a38339f5f38272751028b2240a5f8e097301957e32db4cef8b946f472d1"
+    },
+    "summary": {
+      "path": "outputs/dengue_phase3_censoring_stress_summary.csv",
+      "sha256": "875cb86edba045770d9c3b6cbc9046cc8c6c910c025e366d3dd854ca1869d3b1"
+    },
+    "comparisons": {
+      "path": "outputs/dengue_phase3_censoring_policy_comparisons.csv",
+      "sha256": "188a622950e3eb5f872e15cf2080d1c9e4dad56d3b39a7d6a9f89cacbfbc9007"
+    },
+    "minimax_proxy_audit": {
+      "path": "outputs/dengue_phase3_minimax_proxy_weight.csv",
+      "sha256": "afa5528c2495abea70facd2852f09eb3f080dff775d3c0b923a749e897786bf7"
+    },
+    "decision_minimax_audit": {
+      "path": "outputs/dengue_phase3_decision_minimax_proxy_weight.csv",
+      "sha256": "bc068b7c77b880b9f9fd3186f45bbe9b64720f9903efbee47ccec16fd9f6c574"
+    },
+    "decision_minimax_summary": {
+      "path": "outputs/dengue_phase3_decision_minimax_summary.csv",
+      "sha256": "a7619485f66e2b9000862245f5e50c0ca5bb65450f33e1749df929b195b26c8e"
+    },
+    "data_request": {
+      "path": "outputs/dengue_phase3_minimum_data_request.csv",
+      "sha256": "7abf869b5112f52764c80937d7806cc6db3b174199ad36a6531cc5564b22b887"
+    },
+    "report": {
+      "path": "outputs/dengue_phase3_publication_viability_report.md",
+      "sha256": "7b6647e2ece0290799ea989024ad0d907ef99818af961c244f18d6facc6847f4"
+    },
+    "checkpoint": {
+      "path": "work/phase3_latent_demand/CHECKPOINT.md",
+      "sha256": "b6d122efd4b70c01a3c19e004ed8b7cbf80d6640a111b2ca7063a3dfb223e37c"
+    }
+  }
+}
