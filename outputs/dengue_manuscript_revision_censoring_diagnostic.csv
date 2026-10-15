@@ -1,0 +1,8 @@
+diagnostic,value,interpretation
+complete_weeks,138.0,Weeks with all seven daily admission dates published.
+top_decile_threshold_admissions,6588.599999999999,Descriptive threshold only; not a capacity estimate.
+adjacent_top_decile_transitions,10.0,Adjacent high-to-high transitions available for a plateau check.
+exactly_equal_adjacent_high_transitions,0.0,Exact ties could indicate rounding or saturation but are not causal evidence.
+adjacent_high_transitions_within_5pct,3.0,Near-flat high transitions; still non-identifying without capacity or denied-admission data.
+distinct_complete_week_admission_values,128.0,A mechanical hard cap would tend to reduce distinct values near the ceiling.
+annual_peak_coefficient_of_variation,0.3485546957982019,Variation in annual peaks is descriptive and does not identify unmet demand.

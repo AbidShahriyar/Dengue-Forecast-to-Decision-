@@ -1,0 +1,9 @@
+issue,epi_week,parsed_rows,expected_rows_from_published_table,unique_hospitals,duplicate_hospital_rows,row_count_pass,consecutive_hospital_week_pairs,exact_cumulative_case_reconciliations,maximum_absolute_reconciliation_difference
+6,39,20,20,20,0,True,,,
+7,40,10,10,10,0,True,,,
+8,41,20,20,20,0,True,,,
+9,42,20,20,20,0,True,,,
+10,43,20,20,20,0,True,,,
+11,44,20,20,20,0,True,,,
+12,45,20,20,20,0,True,,,
+all consecutive pairs,39-45,130,130,20,0,True,100.0,100.0,0.0
